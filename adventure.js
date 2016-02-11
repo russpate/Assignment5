@@ -165,7 +165,7 @@ var answer = prompt ("Choose your character to guide your tour: \n\nA. Darth Vad
                   //
                   //Scenario 1.1: Question -- Next
                   //
-                  var answer = prompt ("**Luke spins around and flips his hood back**\n\nMan these tour ships are hard to steer with one hand.\n\n*crickets*\n\nMan this crowd is colder than a Ton-Ton's undercarriage on Hoth.\n\n What would you guys like to do next?\n\n- Hear another joke\n\n- Continue the tour\n\n- Stop the ride I'm get motion sickness");
+                  var answer = prompt ("**Luke spins around and flips his hood back**\n\nMan these tour ships are hard to steer with one hand.\n\n*crickets*\n\nMan this crowd is colder than a Ton-Ton's undercarriage on Hoth.\n\n What would you guys like to do next?\n\n- Hear another joke\n\n- Continue the tour\n\n- Stop the ride I get motion sickness");
                             //
                             // Scenario 1.1: Choice 1 -- Joke
                             //
@@ -220,7 +220,7 @@ var answer = prompt ("Choose your character to guide your tour: \n\nA. Darth Vad
                             //
                             // Scenario 1.2: Choice 2 --
                             //
-                            } else if(answer === "Continue the tour") {
+                          } else if(answer === "Continue the tour" || answer === "continue") {
                                 //
                                 //Scenario 1.2.1: Question 1 --
                                 //
@@ -229,17 +229,29 @@ var answer = prompt ("Choose your character to guide your tour: \n\nA. Darth Vad
                                           // Scenario 1.2.1: Choice 1 --
                                           //
                                           if(answer === "Vader's Bedroom" || answer === "vader's bedroom" || answer === "vaders bedroom" || answer === "vaders room"){
-                                            console.log("recap: ");
+                                            console.log("recap: yaaaay we get to go see my dad's.. errr.. vader's room!");
+
+                                            alert("I've got a bad feeling about this...\n\n****shhhwoop**** The door to vader's room opens.\n\n*!*~ksssshhhkrrrrr~*!*\n\nLooks like vader is out(thank goodness) and his room is a mess.\n\nAs you can see here is where he sits in his bean bag chair and skypes with Palpatine, over here is where he looks out his window at space, and over here I think he sleeps in this wierd ball thing.\n\nWell it looks like that's all the time we have for our tour. Thanks for riding aboard the Skywalker Express and I'll seeya next time.");
+
+                                            endGame();
                                           //
                                           // Scenario 1.2.2: Choice  2 --
                                           //
                                           } else if (answer === "The trash compactor" || answer === "trash"){
                                                 console.log("recap: ");
+
+                                                alert("YUCK\n\nWhat an aweful idea.. \n\nThere's some weird worm octupus monster thing that lives down there and I'd rather not have to deal with it again.\n\n Actually, that brings up a lot of memories I think I'm gonna go cry to my sister. Maybe try taking another tour tomorrow.");
+
+                                                endGame();
                                           //
                                           // Scenario 1.2.3: Choice 3 --
                                           //
                                         } else if (answer ==="Cell Block 2187" || answer === "cell block 2187" || answer === "cell block" || answer === "cell"){
-                                            console.log("recap: ");
+                                            console.log("recap: nice choice, transporting a prisoner?");
+
+                                            alert("ooooh you like a little intrigue eh?\n\nNeed a little msytery and drama in your life?\n\nWell this is where they held my sister for allegedly being part of the rebel alliance and a traitor.\n\nMy sister can be mean sometimes, she called me short when I rescued her.\n\nAnyways, over there is the chute to the trash compactor.\n\nWell it looks like that's all the time we have for our tour. Thanks for riding aboard the Skywalker Express and I'll seeya next time.");
+
+                                            endGame();
                                           //
                                           // Scenario 1.2.4: Choice -- Vaccuum of Space
                                           //
@@ -250,28 +262,40 @@ var answer = prompt ("Choose your character to guide your tour: \n\nA. Darth Vad
                             //
                             // Scenario 1.3: Choice 3 --
                             //
-                            } else if (answer === "") {
+                          } else if (answer === "Stop the ride I get motion sickness" || answer === "Stop the ride" || answer === "stop the ride" || answer === "STOP" || answer === "Stop" || answer === "stop") {
 
                                 //
                                 //Scenario 1.3.1: Question 1 --
                                 //
-                                  var answer = prompt ("");
+                                  var answer = prompt ("WoOoOoOoOoOA Nelly.. Looks like we're turning ths tugboat around.\n\nYou know the same thing happened to me on the Disney ride.\n\nWould you like to:\n\n- Walk back\n\n- Be escorted by a protocol droid\n\n- Be dragged back by a couple of stormtroopers");
 
                                           //
                                           // Scenario 1.3.1: Choice 1 --
                                           //
-                                            if(answer === ""){
-                                              console.log("recap: ");
+                                            if(answer === "Walk back"){
+                                              console.log("recap: Oh nice well I'm glad you are well enough to walk!");
+
+                                              alert("A little fresh air is always good\n\nOh and watch out for those little MSE-6 Droids those little buggers will take your feet right out from under you if you aren't careful.\n\nAdios.");
+
+                                              endGame();
                                           //
                                           // Scenario 1.3.2: Choice  2 --
                                           //
-                                          } else if (answer === ""){
-                                                console.log("recap: ");
+                                        } else if (answer === "Be escorted by a protocol droid" || answer === "Escorted" || answer === "escorted"){
+                                                console.log("recap: Meet my good friend c3po he's a little slow but he will definitely get you there.");
+
+                                                alert("~*~*~*~ Beep Boop Beep Boop ~*~*~*~\n\nWell hello Masta Luke and I'd be most delighted to escort your guest.\n\nFollow me right this way.");
+
+                                                endGame();
                                             //
                                             // Scenario 1.3.3: Choice 3 --
                                             //
-                                          } else if (answer ===""){
-                                                console.log("recap: ");
+                                          } else if (answer ==="Be dragged back by a couple of stormtroopers" || answer === "stormtroopers" || answer === "dragged" || answer === "drag"){
+                                                console.log("recap: Have it your way, guys! Take them away.");
+
+                                                alert("Clunk Clunk Clunk Clunk\n\nAlright, move along\n\nLet's go.\n\nClunk Clunk Clunk Clunk");
+
+                                                endGame();
 
                                             //
                                             // Scenario 1.3.4: Choice -- Vaccuum of Space
@@ -296,31 +320,43 @@ var answer = prompt ("Choose your character to guide your tour: \n\nA. Darth Vad
                   //
                   //Scenario 3.1: Question --
                   //
-                  var answer = prompt ("");
+                  var answer = prompt ("AaAaAaAaAaAaAaAaaHHHHhHhHhhHhhhhHhhhhHhHhhhhHh\n\nI'm Kylo Ren and I figured out how to travel back in time and I'm so pissed about everything..\n\nCan anyone guess who my hero is?\n\n- Han Solo\n\n- Hux\n\n- Vader");
                             //
                             // Scenario 3.1: Choice 1 --
                             //
-                            if(answer === ""){
-                              console.log("recap: ");
+                            if(answer === "Han Solo" || answer === "Han" || answer === "han"){
+                              console.log("recap: OOOOOOOOH BAD CHOICE.");
                                 //
                                 //Scenario 3.1.1: Question 1 --
                                 //
-                                  var answer = prompt ("");
+                                  var answer = prompt ("DUUUUUUDE NOOOOOOOO I SERIOUSLY HATE THAT GUY.\n\nHE IS THE WORST\n\nDo you even know what his piece of crap ship is named?\n\n- Milennium Falcon\n\n- USS Enterprise\n\n- Protector");
                                           //
                                           // Scenario 3.1.1: Choice 1 --
                                           //
-                                          if(answer === ""){
-                                            console.log("recap: ");
+                                          if(answer === "Millenium Falcon" || answer === "Falcon" || answer === "falcon"){
+                                            console.log("recap: Yep. That's right, but thats not really gonna help you much. This dude is just pissed about everything.");
+
+                                            alert("YEEEEEEEEEEEEEEEEEEEEEEEEEES.\n\n** Kylo force throws you out of the tour **");
+
+                                            endGame();
                                           //
                                           // Scenario 3.1.2: Choice  2 --
                                           //
-                                          } else if (answer === ""){
-                                                console.log("recap: ");
+                                        } else if (answer === "USS Enterprise" || answer === "Enterprise" || answer === "enterprise"){
+                                                console.log("recap: What are you a trekkie or something?");
+
+                                                alert("NOOOOOOOOOOOOOOO\n\n** Kylo force throws you out of the tour **");
+
+                                                endGame();
                                           //
                                           // Scenario 3.1.3: Choice 3 --
                                           //
-                                          } else if (answer ===""){
-                                                console.log("recap: ");
+                                        } else if (answer === "Protector" || answer === "protector"){
+                                                console.log("recap: You're wrong and Kylo is just pissed about everything so don't take it personally. ");
+
+                                                alert("No. But that sounds pretty badass, I might rename my ship.\n\n** Kylo force throws you out of the tour **");
+
+                                                endGame();
 
                                           //
                                           // Scenario 3.1.4: Choice -- Vaccuum of Space
@@ -333,26 +369,38 @@ var answer = prompt ("Choose your character to guide your tour: \n\nA. Darth Vad
                             //
                             // Scenario 3.2: Choice 2 --
                             //
-                            } else if(answer === "") {
+                          } else if(answer === "Hux" || answer === "hux") {
                                 //
                                 //Scenario 3.2.1: Question 1 --
                                 //
-                                var answer = prompt ("");
+                                var answer = prompt ("Naw but that dude is totally like my best friend.");
                                           //
                                           // Scenario 3.2.1: Choice 1 --
                                           //
                                           if(answer === ""){
                                             console.log("recap: ");
+
+                                            alert();
+
+                                            endGame();
                                           //
                                           // Scenario 3.2.2: Choice  2 --
                                           //
                                           } else if (answer === ""){
                                             console.log("recap: ");
+
+                                            alert();
+
+                                            endGame();
                                           //
                                           // Scenario 3.2.3: Choice 3 --
                                           //
                                           } else if (answer ===""){
                                             console.log("recap: ");
+
+                                            alert();
+
+                                            endGame();
 
                                           //
                                           // Scenario 3.2.4: Choice -- Vaccuum of Space
@@ -376,16 +424,28 @@ var answer = prompt ("Choose your character to guide your tour: \n\nA. Darth Vad
                                           //
                                           if(answer === ""){
                                             console.log("recap: ");
+
+                                            alert();
+
+                                            endGame();
                                           //
                                           // Scenario 3.3.2: Choice  2 --
                                           //
                                           } else if (answer === ""){
                                                 console.log("recap: ");
+
+                                                alert();
+
+                                                endGame();
                                           //
                                           // Scenario 3.3.3: Choice 3 --
                                           //
                                           } else if (answer ===""){
                                                 console.log("recap: ");
+
+                                                alert();
+
+                                                endGame();
 
                                           //
                                           // Scenario 3.3.4: Choice -- Vaccuum of Space
