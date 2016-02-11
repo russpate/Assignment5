@@ -169,7 +169,7 @@ var answer = prompt ("Choose your character to guide your tour: \n\nA. Darth Vad
                             //
                             // Scenario 1.1: Choice 1 -- Joke
                             //
-                            if(answer === "Hear Another Joke" || answer === "joke"){
+                            if(answer === "Hear another joke" || answer === "joke"){
                               console.log("recap: eeeeh.. Goodluck Luke is notoriously bad at telling jokes");
                                 //
                                 //Scenario 1.1.1: Question 1 -- How Many Jedi's
@@ -373,34 +373,42 @@ var answer = prompt ("Choose your character to guide your tour: \n\nA. Darth Vad
                                 //
                                 //Scenario 3.2.1: Question 1 --
                                 //
-                                var answer = prompt ("Naw but that dude is totally like my best friend.");
+                                var answer = prompt ("Naw but that dude is totally my best friend.\n\nI mean we fight sometimes but thats what best friends do.\n\nDo you guys want to help me look around for vader?\n\n- yes, no, or maybe?");
                                           //
                                           // Scenario 3.2.1: Choice 1 --
                                           //
-                                          if(answer === ""){
-                                            console.log("recap: ");
+                                          if(answer === "yes"){
+                                            console.log("recap: Kylo is a bit of a wild card, this might take a while.");
 
-                                            alert();
+                                            alert("AWESOME I LOVE YOU GUYS.\n\nYou venture off with Kylo into the depths of time and space never to be seen again.");
 
-                                            endGame();
+                                            alert("Looks like you basically just followed Kylo into the vaccuum of space");
+
+                                            location.reload();
+
                                           //
                                           // Scenario 3.2.2: Choice  2 --
                                           //
-                                          } else if (answer === ""){
-                                            console.log("recap: ");
+                                        } else if (answer === "no"){
+                                            console.log("recap: oh dear.");
 
-                                            alert();
+                                            alert("** Kylo force throws you out of the tour **");
 
-                                            endGame();
+                                            alert("Kylo doesn't like to take no for an answer, he literally just threw you into the vacuum of space.");
+
+                                            location.reload();
+
                                           //
                                           // Scenario 3.2.3: Choice 3 --
                                           //
-                                          } else if (answer ===""){
+                                        } else if (answer ==="maybe"){
                                             console.log("recap: ");
 
-                                            alert();
+                                            alert("** Kylo force throws you out of the tour **");
 
-                                            endGame();
+                                            alert("Kylo doesn't like indecisiveness, he literally just threw you into the vacuum of space.");
+
+                                            location.reload();
 
                                           //
                                           // Scenario 3.2.4: Choice -- Vaccuum of Space
@@ -412,7 +420,7 @@ var answer = prompt ("Choose your character to guide your tour: \n\nA. Darth Vad
                             //
                             // Scenario 3.3: Choice 3 --
                             //
-                            } else if (answer === "") {
+                          } else if (answer === "Vader") {
 
                                 //
                                 //Scenario 3.3.1: Question 1 --
