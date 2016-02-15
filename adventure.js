@@ -16,6 +16,8 @@ var questions = {
       kyloShipName:"DUUUUUUDE NOOOOOOOO I SERIOUSLY HATE THAT GUY.\n\nHE IS THE WORST\n\nDo you even know what his piece of crap ship is named?\n\na) Milennium Falcon\n\nb) USS Enterprise\n\nc) Protector",
       kyloSearchVader:"Naw but that dude is totally my best friend.\n\nI mean we fight sometimes but thats what best friends do.\n\nDo you guys want to help me look around for vader?\n\na) yes, b) no, or c) maybe?",
       kyloLove:"HELL YES I FRICKIN' LOVE THAT DUDE I MEAN WHAT'S NOT TO LOVE.\n\nWhat do you love about him?\n\na) The way he dress in all black like a badass\n\nb) The kickass KRSCHKOUGH sound his ventilator makes\n\nc) I don't love anything about him",
+
+  wantMore:"Wow Guys, its been real and its been fun but it hasn't been real fun. We need some time to go adjust our motivators.\n\nUnless, you want to take another tour right now?\n\na) Yes or b) No?",
 };
 //
 //
@@ -242,7 +244,6 @@ var answer = questions.askQuestion(questions.startCharacter).toLowerCase();
                                       console.log("recap: yaaaay we get to go see my dad's.. errr.. vader's room!");
 
                                       alert("I've got a bad feeling about this...\n\n****shhhwoop**** The door to vader's room opens.\n\n*!*~ksssshhhkrrrrr~*!*\n\nLooks like vader is out(thank goodness) and his room is a mess.\n\nAs you can see here is where he sits in his bean bag chair and skypes with Palpatine, over here is where he looks out his window at space, and over here I think he sleeps in this wierd ball thing.\n\nWell it looks like that's all the time we have for our tour. Thanks for riding aboard the Skywalker Express and I'll seeya next time.");
-
                                       endGame();
                                     //
                                     // Scenario 1.2.2: Choice  2 --
@@ -438,8 +439,8 @@ var answer = questions.askQuestion(questions.startCharacter).toLowerCase();
                                     //
                                     // Scenario 3.3.1: Choice 1 --
                                     //
-                                    if(answer === ""){
-                                      console.log("recap: ");
+                                    if(answer === "a"){
+                                      console.log("recap: This response worked");
 
                                       alert();
 
@@ -447,8 +448,8 @@ var answer = questions.askQuestion(questions.startCharacter).toLowerCase();
                                     //
                                     // Scenario 3.3.2: Choice  2 --
                                     //
-                                    } else if (answer === ""){
-                                          console.log("recap: ");
+                                    } else if (answer === "b"){
+                                          console.log("recap: This response worked");
 
                                           alert();
 
@@ -456,8 +457,8 @@ var answer = questions.askQuestion(questions.startCharacter).toLowerCase();
                                     //
                                     // Scenario 3.3.3: Choice 3 --
                                     //
-                                    } else if (answer ===""){
-                                          console.log("recap: ");
+                                    } else if (answer ==="c"){
+                                          console.log("recap: This response worked");
 
                                           alert();
 
@@ -488,9 +489,9 @@ var answer = questions.askQuestion(questions.startCharacter).toLowerCase();
 
 
 function endGame(){
-  var answer = prompt("Wow Guys, its been real and its been fun but it hasn't been real fun. We need some time to go adjust our motivators.\n\nUnless, you want to take another tour right now?\n\nYes or No?");
+  var answer = questions.askQuestion (questions.wantMore);
 
-  if(answer === "take another tour" || answer === "yes"){
+  if(answer === "a"){
     location.reload();
   }
   else{

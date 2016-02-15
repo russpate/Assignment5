@@ -15,6 +15,7 @@ var questions = {
       kyloShipName:"DUUUUUUDE NOOOOOOOO I SERIOUSLY HATE THAT GUY.\n\nHE IS THE WORST\n\nDo you even know what his piece of crap ship is named?\n\na) Milennium Falcon\n\nb) USS Enterprise\n\nc) Protector",
       kyloSearchVader:"Naw but that dude is totally my best friend.\n\nI mean we fight sometimes but thats what best friends do.\n\nDo you guys want to help me look around for vader?\n\na) yes, b) no, or c) maybe?",
       kyloLove:"HELL YES I FRICKIN' LOVE THAT DUDE I MEAN WHAT'S NOT TO LOVE.\n\nWhat do you love about him?\n\na) The way he dress in all black like a badass\n\nb) The kickass KRSCHKOUGH sound his ventilator makes\n\nc) I don't love anything about him",
+  wantMore:"Wow Guys, its been real and its been fun but it hasn't been real fun. We need some time to go adjust our motivators.\n\nUnless, you want to take another tour right now?\n\na) Yes or b) No?",
 };
 
 
